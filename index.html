@@ -111,7 +111,7 @@
   
 	/* 使用渐变颜色实现彩虹字体 */
 	.rainbow-text {
-	  background: linear-gradient(to right, #AD88C6, #E1AFD1);
+	  background: linear-gradient(to right, #7D8ABC, #AD88C6);
 	  -webkit-background-clip: text;
 	  color: transparent;
 	  display: inline-block;
@@ -165,7 +165,7 @@
 		  <style>
 			/* 使用渐变颜色实现彩虹字体 */
 			.rainbow-text {
-			  background: linear-gradient(to right, #AD88C6, #E1AFD1);
+			  background: linear-gradient(to right, #7D8ABC, #AD88C6);
 			  -webkit-background-clip: text;
 			  color: transparent;
 			  display: inline-block;
@@ -176,7 +176,7 @@
             Several medical Multimodal Large Languange Models (MLLMs) have been developed to address tasks involving visual images with textual instructions across various medical modalities, achieving impressive results.  Most current medical generalist models are region-agnostic, treating the entire image as a holistic representation. However, they struggle to identify which specific regions they are focusing on when generating a sentence. To mimic the behavior of doctors, who typically begin by reviewing the entire image before concentrating on specific regions for a thorough evaluation, we aim to enhance the capability of medical MLLMs in understanding anatomical regions within entire medical scans.
           </p>
           <p>
-            To achieve it, we first formulate <b>Region-Centric tasks</b> and construct a large-scale dataset, <span class="rainbow-text">MedRegInstruct</span>, to incorporate regional information into training. Combining our collected dataset with other medical multimodal corpora for training, we propose a Region-Aware medical MLLM, <span class="rainbow-text">MedRegA</span>, which is the first bilingual generalist medical AI system to simultaneously handle image-level and region-level medical vision-language tasks across a broad range of modalities. Our MedRegA not only enables three region-centric tasks, but also achieves the best performance for visual question answering, report generation and medical image classification over 8 modalities, showcasing significant versatility. Experiments demonstrate that our model can not only accomplish powerful performance across various medical vision-language tasks in bilingual settings, but also recognize and detect structures in multimodal medical scans, boosting the interpretability and user interactivity of medical MLLMs.
+            To achieve it, we first formulate <b>Region-Centric tasks</b> and construct a large-scale dataset, <span class="rainbow-text">MedRegInstruct</span>, to incorporate regional information into training. Combining our collected dataset with other medical multimodal corpora for training, we propose a <b>Region-Aware medical MLLM</b>, <span class="rainbow-text">MedRegA</span>, which is the first bilingual generalist medical AI system to simultaneously handle image-level and region-level medical vision-language tasks across a broad range of modalities. Our MedRegA not only enables three region-centric tasks, but also achieves the best performance for visual question answering, report generation and medical image classification over 8 modalities, showcasing significant versatility. Experiments demonstrate that our model can not only <b>accomplish powerful performance across various medical vision-language tasks in bilingual settings</b>, but also <b>recognize and detect structures in multimodal medical scans, boosting the interpretability and user interactivity of medical MLLMs</b>.
         </p>
         </div>
       </div>
@@ -188,7 +188,7 @@
         <div class="column is-full-width">
           <div class="content has-text-justified">
                 <div style="text-align: center;">
-                  <img id="teaser" width="100%" src="static/images/intro.png">     
+                  <img id="teaser" width="80%" src="static/images/intro.png">     
                 </div>
           </div>
         </div>
@@ -197,6 +197,84 @@
 
 </section>
 
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2" style="background: linear-gradient(to right,  #535C91, #624E88); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;">
+          MedRegA on General Medical Tasks</h2>
+      <h5 class="title is-4">
+        English Report Generation.
+      </h5>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="content has-text-justified">
+                  <div style="text-align: center;">
+                    <img id="teaser" width="80%" src="static/images/en_report.png">     
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="content has-text-justified">
+                  <div style="text-align: center;">
+                    <img id="teaser" width="80%" src="static/images/cxr_example.png">     
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h5 class="title is-4">
+        Chinese Report Generation.
+      </h5>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="content has-text-justified">
+                  <div style="text-align: center;">
+                    <img id="teaser" width="80%" src="static/images/cn_report.png">     
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="content has-text-justified">
+                  <div style="text-align: center;">
+                    <img id="teaser" width="80%" src="static/images/cn_report_generate.png">     
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h5 class="title is-4">
+        Visual Question Answering and Diagnosis.
+      </h5>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="content has-text-justified">
+                  <div style="text-align: center;">
+                    <img id="teaser" width="50%" src="static/images/radar.png">     
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
