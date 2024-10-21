@@ -207,6 +207,9 @@
       <h5 class="title is-4">
         English Report Generation
       </h5>
+      <p>
+      Medical Report Generation task requires the model to generate a detailed report based on the provided medical scan. For English report generation, we evaluate our model on the report generation task for chest X-ray datasets MIMIC-CXR and IU-Xray.
+    </p>
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-full-width">
@@ -243,6 +246,9 @@
       <h5 class="title is-4">
         Chinese Report Generation
       </h5>
+      <p>
+        To evaluate the ability of our model in generating medical report in Chinese, we collect Chinese image-report pairs in real clinical scenarios to construct a test dataset covering brain, chest, spine, abdomen and pelvis from the hospital. 
+      </p>
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-full-width">
@@ -278,12 +284,15 @@
       <h5 class="title is-4">
         Visual Question Answering and Diagnosis
       </h5>
+      <p>
+        We demonstrate the results on medical VQA benchmark SLAKE, and disease diagnosis benmarks including VinDr series datasets. To further enhance the model's focus on disease lesions, we employ Regional CoT (w/ Region). The improved results indicate that incorporating regional information assists medical MLLMs to concentrate on specific regions.
+      </p>
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-full-width">
             <div class="content has-text-justified">
                   <div style="text-align: center;">
-                    <img id="teaser" width="60%" src="static/images/radar.png">     
+                    <img id="teaser" width="45%" src="static/images/radar.png">     
                   </div>
             </div>
           </div>
@@ -302,13 +311,90 @@
             <h2 class="title is-2" style="background: linear-gradient(to right,  #535C91, #B2A4FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;line-height: 1.5;">
               MedRegA on Region-Centric Tasks</h2>
               <p>
-          
-    
-          
+            Region-Centric tasks are defined from three perspectives: (1) <b>Region-to-Text Identification</b>, where the model outputs the name of the specified region; (2) <b>Text-to-Region Detection</b>, where the model detects the area of the given organ or anomaly; (3) <b>Grounded Report Generation</b>, where the model generates a report for the medical scan, aligning each description with the corresponding region.
         </p>
         </div>
         </div>
         </div>
+        </section>
+
+        <section class="section hero">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-full-width">
+          <h5 class="title is-4">
+            Region-to-Text Identification
+          </h5>
+          <p>
+            We categorize the task into (1) structure identification for identifying anatomies such as structures within the brain, heart, lung, abdomen or spine, and (2) lesion identification focusing on abnormalities like tumors and cancers. The model demonstrates a stronger capability of identifying body structures compared to lesions, possibly because anatomies tend to be larger, whereas lesions are subtler and exhibit more variation in shape.
+          </p>
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <div class="content has-text-justified">
+                      <div style="text-align: center;">
+                        <img id="teaser" width="80%" src="static/images/r2t.png">     
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        </section>
+
+        <section class="section hero">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-full-width">
+          <h5 class="title is-4">
+            Text-to-Region Detection
+          </h5>
+          <p>
+            We classify the task into four categories according to the number of detected objects and the number of regions per object: single-object single-region, single-object multi-region, multi-object single-region, and multi-object multi-region.
+          </p>
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <div class="content has-text-justified">
+                      <div style="text-align: center;">
+                        <img id="teaser" width="80%" src="static/images/t2r.png">     
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        </section>
+
+
+        <section class="section hero">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-full-width">
+          <h5 class="title is-4">
+            Grounded Report Generation
+          </h5>
+          <p>
+            We exemplify the output of MedRegA for the grounded report generation task below.
+          </p>
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <div class="content has-text-justified">
+                      <div style="text-align: center;">
+                        <img id="teaser" width="80%" src="static/images/ground_example.png">     
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
         </section>
 
 </body>
